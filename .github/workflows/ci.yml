@@ -1,4 +1,4 @@
-name: Deploy
+name: Backend-Deploy
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       run: |
         echo "$SSH_PRIVATE_KEY" > keyfile
-        chmod 600 keyfile
+        chmod 600 keyfile 
         mkdir -p ~/.ssh
         cp known_hosts ~/.ssh/known_hosts
         ssh -t -i keyfile ubuntu@ec2-3-7-46-126.ap-south-1.compute.amazonaws.com
