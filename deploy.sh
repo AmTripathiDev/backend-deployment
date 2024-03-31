@@ -1,5 +1,5 @@
 #!/bin/bash
-export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v20.5.0/bin
+export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v20.12.0/bin
 
 cd backend-deployment
 git pull origin master

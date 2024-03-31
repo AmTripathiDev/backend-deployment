@@ -22,7 +22,5 @@ jobs:
         mkdir -p ~/.ssh
         cp known_hosts ~/.ssh/known_hosts
         ssh -t -i keyfile ubuntu@ec2-3-7-46-126.ap-south-1.compute.amazonaws.com
-        ls
-        pm2
         sudo bash ~/backend-deployment/deploy.sh
 
