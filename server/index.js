@@ -19,8 +19,4 @@ app.use("/user", userRouter);
 //   }
 // );
 
-app.listen(3000, () => console.log("Server is running on port 3001"))
-
-// Dockerize 
-// Aws Deployment 
-// Volumes and Networks
+app.listen(3000, () => console.log("Server is running on port 3000"))
